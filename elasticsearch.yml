@@ -1,0 +1,12 @@
+
+
+transport.publish_host: ${AWS_PRIVATE_IP}
+node.name: ${ES_NAME}
+cluster.name: ${AWS_SECURITY_GROUP}
+
+discovery.type: ec2
+discovery.ec2.groups: ${AWS_SECURITY_GROUP}
+
+cloud.node.auto_attributes: true
+
+cloud.aws.region: ${AWS_REGION}
